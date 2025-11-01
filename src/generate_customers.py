@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 # 고객 데이터 생성
 def generate_customers(num_customers = 300):
     # 저장 폴더 생성
-    output_dir = "../output"
+    output_dir = os.path.join("..", "output")
     os.makedirs(output_dir, exist_ok=True)
 
     # 기본 설정값
